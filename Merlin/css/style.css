@@ -1,0 +1,924 @@
+
+
+body{
+	
+	/*background-color: #8e8e8e; */
+	background-image: url("../Imagens/backb.jpg");
+	background-attachment: fixed; /* fixa o background */
+	background-size: cover; /* manter o tamanho de forma responsiva */
+	font-size: 1em; /*1 em = 16px */
+	margin: 0px;
+	padding: 0px;
+}
+
+/* FIM DO SOCIAL */
+
+.Layout{
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+.Layout p{
+	text-align:center;
+	color: #ffffff;
+	font-size: 2.5em;
+}
+
+.DivTexto{
+	background-color: #9C089C;
+	
+
+}
+
+.Destaque{
+	padding: 150px 0px 150px 150px; /* box model */
+	max-width: 1080px;
+	margin: 0 auto;
+	margin-right: 200px;
+}
+/* MENU */
+
+.side-menu-wrapper { /* style menu wrapper */
+	background: rgba(0,0,10,.95);
+	padding: 40px 0 0 40px;
+	position: fixed; /* Fixed position */
+	top: 0;
+	left: 0; /* Sidebar initial position. "right" for right positioned menu */
+	height: 100%;
+	z-index: 2;
+	transition: 0.0s; /* CSS transition speed */
+	width: 200px;
+	font: 20px "Courier New", Courier, monospace;
+	box-sizing: border-box;
+
+}
+
+.side-menu-wrapper > ul{ /* css ul list style */
+	list-style:none;
+	padding:0;
+	margin:0;
+    overflow-y: auto; /* enable scroll for menu items */
+	height:95%;
+
+}
+.side-menu-wrapper > ul > li > a { /* links */
+    display: block;
+    border-bottom: 1px solid #131313;
+    padding: 6px 4px 6px 4px;
+    color: #ffffff;
+    transition: 0.3s;
+	text-decoration: none;
+
+}
+.side-menu-wrapper > a.menu-close { /* close button */
+    padding: 8px 0 4px 23px;
+    color: #ffffff;
+    display: block;
+    margin: -30px 0 -10px -20px;
+    font-size: 35px;
+    text-decoration: none;
+
+}
+
+
+.menu-overlay { /* overlay */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+
+.menu-open{
+	    display: block;
+		background-color: #000000;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 15px;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+nav li:hover ul{
+	display: none;
+
+}
+
+nav ul li a:hover{
+	background-color: #00bfff;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
+	
+}
+
+/* FIM DO MENU */
+
+.Fixar{
+position: fixed;
+top: 0;
+z-index: 3;
+}
+
+
+
+/* LOGO */
+
+.Logo{
+	background-color:#000000;
+}
+.logo2{
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+/* FIM DO LOGO */
+/*RODAPÉ*/
+footer{
+	width: 100%;
+	background-color: #000000;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.rodape{
+	margin-top: 310px;
+}
+
+.rodape1{
+	margin-top: 0px;
+}
+
+
+
+/* SOCIAL */
+
+.social{
+	position: fixed;
+	left: -40px;
+	top: 200px;
+	z-index: 2000;
+}
+
+.social ul{
+	list-style: none;
+}
+
+.social ul li a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.icon-facebook{
+
+}
+
+
+/* FIM DO SOCIAL */
+
+
+/* Titulo*/
+.tt1{
+	margin-bottom: -20px;
+	margin-top: -80px;
+	margin-left: 250px;
+	font-size: 48px;
+	color: #000000;
+
+}
+/* Imagem */
+.a{
+	margin-top: -30px;
+	margin-left: -150px;
+	padding: 35px;
+;
+
+
+}
+/* Texto 1  Merlin */
+.t1{
+	margin-top: -440px;
+	margin-left: 250px;
+	text-align: justify;
+	font-size: 18px;
+	color: #000000;
+	max-width: 100%;
+	
+}
+/* Titulo 2*/
+.tt2{
+	color: #000000;
+	margin-left: 345px;
+	font-size: 36px;
+	margin-top: -60px;
+
+
+}
+
+/* Texto 2 Resumo Nanatsu*/
+.t2{
+	margin-top: 50px;
+	margin-left: 0px;
+	text-align: justify;
+	font-size: 18px;
+	color: #000000;
+
+	
+}
+/* Imagem 2 Nanatsu*/
+.b{
+	margin-top: -160px;
+	margin-left: -150px;
+	padding: 35px;
+	float: left;
+	
+
+}
+/* Botão Detalhes: Conteudo Merlin*/
+.botao{
+	width: 100px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 250px;
+	bottom: -400px;
+
+}
+/* Botão 2 Detalhes: Todos os Personagens*/
+.botao2{
+	max-width: 100%;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	text-align: center;
+	right: 250px;
+	bottom: -1650px;
+
+}
+
+/* CONTEUDO */
+
+.imagem1{
+	text-align: center;
+	position: relative;
+	padding: 30px;
+
+}
+
+.h1conteudo{
+	margin-top: 25px;
+	text-align: center;
+	font-size: 1.2em;
+	
+	
+}
+
+.h2conteudo{
+	position: relative;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 25px;
+	font-size: 1.2em;
+	padding: 20px;
+
+}
+
+
+.h3conteudo{
+	margin-top: 25px;
+	margin-left: 150px;
+	margin-right: 150px;
+	position: relative;
+	padding: 20px;
+	font-size: 1.2em;
+	
+
+}
+
+.h4conteudo{
+	margin-top: -8px;
+	position: relative;
+	font-size: 1.2em;
+}
+
+/* FIM DO CONTEUDO */
+
+
+/*blocos*/
+	.blocos{
+	max-width: 29.00%; /* ---- (325/1024)*100 ----*/
+	height: 625px;
+	float: left;
+	margin-left: 3.4%; /*---- (20/1024)*100 ----*/
+	border: 1px solid #000000;
+	text-align: center;
+	 /* posicionamento do botão */
+	background-color: #C78B00;
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: justify;
+}
+
+.blocos a{
+	width: 70px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 3.0em;
+	position: relative;
+	right: 10px;
+	bottom: 10px;
+}
+
+
+.ah2{
+	text-align: justify;
+	margin-top: -15%;
+}
+
+
+
+/* FORMULARIO DE CONTATO */
+#contato{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius:5px;
+	border: 1px solid: #ff0000;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 80px 10px;
+	border-radius:5px;
+	border: 1px solid: #ff0000;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 1px solid: #ffffff;
+	padding: 10px 25px 10px 25px;
+	color: #000000;
+}
+.contatos{
+	text-align: center;
+}
+/* FIM DO FORMULARIO CONTATO */
+/****** Pagina dos pecados ******/
+.meliodas{
+	margin-left: 600px;
+	margin-top: 530px;
+}
+.ban{
+	margin-left: 770px;
+	margin-top: 0px;
+}
+.diane{
+	margin-left: 430px;
+	margin-top: -795px;
+	float: left;
+}
+.merlin{
+	margin-left: 430px;
+
+}
+.king{
+	margin-left: 35px;
+}
+
+.gowther{
+	margin-left: 770px;
+
+
+
+
+}
+.escanor{
+	margin-left: 430px;
+	margin-top: -450px;
+	
+	
+}
+
+.logo{
+	margin-top: 10px;
+}
+/* Página dos pecados */
+/* PAGINA PECADOS */
+
+
+
+.outros{
+	margin-top: -500px;
+}
+.color2{
+	background-color: #ffffff;
+}
+
+/* fim pecados */
+
+/***** fim página dos pecados *******/	
+@media screen and (max-width: 1024px){
+	.gula{
+	text-align: center;
+}
+
+	.h1conteudo{
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	
+	font-size: 2.0em;
+	text-align: center;
+}
+.h2conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.h3conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+.t1{
+	margin-left: 50px;
+	margin-top: 100px;
+	width: 720px;
+	margin-right: 50px;
+}
+.tt1{
+	margin-top: -100px;
+	margin-left: 343px;
+}
+
+.t2{
+	margin-left: 50px;
+	margin-top: 100px;
+	width: 720px;
+	margin-right: 50px;
+}
+.tt2{
+	margin-top: -100px;
+	margin-left: 343px;;
+}
+.botao{
+	bottom: -750px;
+	right: 120px;
+	display: block;
+	font-size: 0.875em;
+	position: absolute;
+}
+.botao2{
+	bottom: -2150px;
+	right: 120px;
+	display: block;
+	font-size: 0.875em;
+	position: absolute;
+
+}
+
+.aa1{
+	width: 480px;
+}
+
+.b{
+	width: 430px;
+	margin-left: -150px;
+	margin-top: 0px;
+	float: left;
+}
+.a{
+	width: 430px;
+	margin-left: -150px;
+	margin-top: 0px;
+	float: left;
+}
+.sobree{
+	text-align: center;
+
+}
+.blocos{
+	margin-left: 160px;
+	float: none;
+	max-width: 700px;
+	height: 900px;
+	margin-top: 1.5%;
+
+
+}
+.ah1{
+	width: 700px;
+	margin-top: 0px;
+}
+.ah2{
+	font-size: 1.5em;
+
+}
+.ah3{
+	font-size: 2.2em;
+
+}
+.ah5{
+	font-size: 1.5em;
+}
+.fundando{
+	text-align: center;
+}
+/* PAGINA PECADOS */
+.meliodas{
+	margin-left: 400px;
+}
+.ban{
+	margin-left: 560px;
+	margin-top: 0px;
+}
+.diane{
+	margin-left: 250px;
+	margin-top: -795px;
+	float: left;
+}
+.merlin{
+	margin-left: 250px;
+
+}
+.king{
+	margin-left: 5px;
+}
+
+.gowther{
+	margin-left: 560px;
+	
+
+}
+.escanor{
+	margin-left: 250px;
+	margin-top: -500px;
+	
+	
+}
+/* FIM DA PAGINA PECADOS */
+
+}
+
+@media screen and (max-width: 768px){
+	.gula{
+	text-align: center;
+}
+
+	.h1conteudo{
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	max-width: 480px;
+	font-size: 2.0em;
+}
+.h2conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.h3conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+.t1{
+
+	margin-left: 33px;
+
+}
+.tt1{
+	margin-top: -100px;
+	margin-left: 150px;
+
+}
+
+.t2{
+	margin-left: 33px;
+	margin-top: 700px;
+	max-width: 100%
+}
+.tt2{
+	margin-top: -80px;
+	margin-left: 50px;
+
+	
+}
+.botao{
+	bottom: -1330px;
+	right: 310px;
+	display: block;
+	font-size: 0.875em;
+	position: absolute;
+
+	
+	
+}
+.botao2{
+	bottom: -3400px;
+	right: 310px;
+	display: block;
+	font-size: 0.875em;
+	position: absolute;
+
+}
+
+.aa1{
+	width: 480px;
+}
+
+.b{
+	max-width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.a{
+	max-width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.sobree{
+	text-align: center;
+
+}
+.blocos{
+	margin-left: 210px;
+	float: none;
+	width: 600px;
+	height: 900px;
+	margin-top: 10.0%;
+
+
+}
+.ah1{
+	width: 600px;
+	margin-top: 0px;
+}
+.ah2{
+	font-size: 1.5em;
+
+}
+.ah3{
+	font-size: 2.2em;
+
+}
+.ah5{
+	font-size: 1.5em;
+}
+.fundando{
+	text-align: center;
+}
+/* Página dos pecados */
+.meliodas{
+	margin-left: 215px;
+	margin-top: 500px;
+	padding: 20px;
+}
+.ban{
+	margin-left: 55px; 
+	
+}
+.diane{
+	margin-top: -795px;
+	margin-left: 380px;
+
+	
+}
+.merlin{
+	margin-left: 55px;
+}
+.king{
+	
+	margin-top: -520px;
+	margin-left: 20px;
+	
+}
+
+.gowther{
+	margin-left: 380px;
+
+
+}
+.escanor{
+	margin-top: -450px;
+	margin-left: 55px;
+	
+	
+}
+/* fim pecados */
+
+
+}
+
+@media screen and (max-width: 480px){
+.Layout{
+	max-width: 100%;
+}
+.gula{
+	text-align: center;
+}
+.aa1{
+	max-width: 100%;
+
+}
+.fundando{
+	max-width: 100%;
+}
+.mil{
+	max-width: 100%;
+}
+.beliaum{
+	max-width: 100%;
+}
+.habilidades{
+	max-width: 100%;
+
+}
+.bencaoo{
+	max-width: 100%
+}
+	.h1conteudo{
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 10px;
+	max-width: 480px;
+	font-size: 2.0em;
+	max-width: 80%
+}
+.h2conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.h3conteudo{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: -10px;
+	padding: 0px;
+	text-align: center;
+}
+
+
+.t1{
+	margin-top: 650px;
+	margin-left: -130px;
+	max-width: 380px;
+
+}
+.tt1{
+	margin-top: -100px;
+	margin-left: 0px;
+}
+
+.t2{
+max-width: 380px;
+margin-top: 300px;
+margin-left: -130px;
+}
+.tt2{
+	margin-top: -80px;
+	margin-left: -40px;
+	width: 480px;
+}
+.botao{
+	bottom: -1280px;
+	right: 185px;
+	position: absolute;
+	
+}
+.botao2{
+	bottom: -3360px;
+	right: 200px;
+	position: absolute;
+	
+}
+
+.aa1{
+	width: 480px;
+}
+
+.b{
+
+	max-width: 350px;
+	margin-left: -127px;
+	margin-top: 0px
+}
+.a{
+
+	max-width: 350px;
+	margin-left: -127px;
+	margin-top: 0px		
+}
+.sobree{
+	width: 380px;
+	margin-left: 50px;
+
+}
+
+.ah1{
+	width: 600px;
+	margin-top: 0px;
+}
+.ah2{
+	font-size: 1.5em;
+
+}
+.ah3{
+	font-size: 2.2em;
+
+}
+.ah5{
+	font-size: 1.5em;
+}
+.fundando{
+	text-align: center;
+}
+/* Página dos pecados */
+.meliodas{
+	margin-left: 75px;
+	
+}
+.ban{
+	margin-left: 95px;
+	margin-top: -20px;
+}
+.merlin{
+	margin-left: 95px;
+	margin-top: 0px;
+
+}
+.king{
+	margin-left: 95px;
+	margin-top: 0px;
+}
+.diane{
+	
+	margin-left: 95px;
+	margin-top: 0px;
+
+}
+.gowther{
+	
+	margin-left: 95px;
+	margin-top: 3px;
+}
+.escanor{
+	margin-left: 95px;
+	margin-top: 0px;
+}
+}
+

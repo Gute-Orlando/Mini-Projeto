@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Sobre</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/estiloso.css">
+	<link rel="icon" href="Imagens/logo1.jpg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+</head>
+
+<body>
+			<!-- menu -->
+
+		<div class="menu-overlay"></div>
+		<nav class="menu">
+		<a href="#" class="menu-open">&#9776; Menu</a>
+
+		<div class="side-menu-wrapper">
+		<a href="#" class="menu-close">×</a>
+		<ul>
+		<li><a href="index.html"  rel="nofollow">Home</a></li>
+		<li><a href="sobre.html"  rel="nofollow">Sobre</a></li>
+		<li><a href="conteudo.html"  rel="nofollow">Conteudo</a></li>
+		<li><a href="contato.html"  rel="nofollow">Contato</a></li>
+		<li><a href="pecados.html"  rel="nofollow">Pecados</a></li>
+		</ul>
+
+		</div>
+    </nav>
+    <!-- REDES SOCIAIS -->
+
+  <div class="social">
+      <ul>
+        <li><a href="https://www.facebook.com" target="blank" class="icon-facebook"><img src="Imagens/facebook.png" alt=""></a></li>
+        <li><a href="https://www.gmail.com" target="blank" class="icon-twitter"><img src="Imagens/google.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com/" target="blank" class="icon-skype"><img src="Imagens/instagram.png" alt=""></a></li>
+        <li><a href="https://www.twitter.com" target="blank" class="icon-gmail"><img src="Imagens/twitter.png" alt=""></a></li>
+      </ul>
+    </div>
+
+		<!--Fim do menu-->
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Imagens/c1.png" height="500" width="100" style="width:100%" alt="">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Imagens/c4.png" height="500" width="100" style="width:100%" alt="">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Imagens/banner3.jpg" height="500" width="100" style="width:100%" alt="">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<h3 style="text-align: center;">Desenvolvido por Gustavo Orlando</h3>
+<p class="sobree" style="text-align: center;">Site desenvolvido para atividadade avaliativa. <br>Tema: Merlin, A maga mais forte de Nanatsu no Taizai</p>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div style="text-align: center;">
+<a href="https://github.com/Kvyzikamemo" target="_blank"><img src="Imagens/git2.png" width="128" heigth="128" alt="github">
+</a>
+
+<a href="https://ninjamock.com/s/5686RSx" target="_blank"><img src="Imagens/ninja1.png" width="128" height="128" alt="NinjaMock"></a>
+<a href="https://merlinnnt.000webhostapp.com/" target="_blank"><img src="Imagens/webhost.png" width="128" height="128" alt="Webhost"></a>
+</div>
+
+    <!-- rodapé -->
+<footer class="rodape1">
+<p>©2018 - Gustavo Orlando</p>      
+</footer>
+
+
+
+
+<script src="js/slide.js"></script>
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script> 
+<script src="js/menulateral.js"></script>
+<script src="js/chibungo.js"></script>
+</body>
+</html>
+
+
